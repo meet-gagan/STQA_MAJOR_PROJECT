@@ -67,8 +67,7 @@ quizapp-stqa/
 │   ├── jmeter_test.jmx     # Apache JMeter Load Test Configuration (128 samples)
 │   └── jmeter_results.jtl  # JMeter Test Run Logs
 └── screenshots/            # Committed Test Dashboard Evidence & Runs
-    ├── jenkins/            # Jenkins Pipeline runs and TestNG Trend Dashboards
-    └── selenium/           # Selenium UI screenshot output
+    └── jenkins/            # Jenkins Pipeline runs and TestNG Trend Dashboards
 ```
 
 ---
@@ -184,9 +183,6 @@ The project implements automated builds in **Jenkins** running on port **8082**:
 ## 📸 Test Results & Screenshots Location
 
 Evidence of successful local and Jenkins test executions are tracked and committed under the [screenshots/](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots) directory:
-
-### 🌲 E2E Selenium UI Capture
-- [Headless Chrome UI Screenshot](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/selenium/ui_screenshot.png) — Captures the frontend rendering and validates the loaded DOM structure.
 
 ### ☸️ Jenkins Pipeline & TestNG Reports
 - [Jenkins Server Dashboard Overview](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/jenkins_dashboard.png) — Displays active pipeline job statuses.
