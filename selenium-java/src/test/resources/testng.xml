@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Quiz App Automation Suite" verbose="2">
+    <test name="API and UI Verification">
+        <classes>
+            <class name="com.quizapp.ApiTests" />
+            <class name="com.quizapp.UiTests" />
+        </classes>
+    </test>
+</suite>

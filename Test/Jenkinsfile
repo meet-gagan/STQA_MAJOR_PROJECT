@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out source code...'
+            }
+        }
+        
+        stage('Cypress Run') {
+            steps {
+                dir('Test') {
+                    // Run Cypress headless execution
+                    sh 'npx cypress run --spec cypress_test.cy.js'
+                }
+            }
+        }
+    }
+}
