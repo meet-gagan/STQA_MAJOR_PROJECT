@@ -186,19 +186,22 @@ The project implements automated builds in **Jenkins** running on port **8082**:
 
 ## 📸 Test Results & Screenshots Location
 
-Evidence of successful local and Jenkins test executions are tracked and committed under the [screenshots/](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots) directory:
+Evidence of successful local and Jenkins test executions are tracked and committed under the [screenshots/](screenshots) directory:
 
 ### 🌲 Cypress E2E Spec Runs
-- [Cypress Spec Run Screenshot](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/cypress/cypress_run.png) — Captures local headed spec runner results (25 passing E2E tests).
-- [Cypress Job Build Triggers Config](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/cypress_build_triggers.png) — Webhook and polling configuration for the Cypress pipeline.
+- [Cypress Spec Run (Scrolled Overview)](screenshots/cypress/cypress_run.png) — Captures local headed spec runner results (25 passing E2E tests).
+- [Cypress Spec Run (Successful Run Detail)](screenshots/cypress/cypress_success_1.png) — Detailed local headed spec runner results showing successful API E2E assertions.
+- [Cypress Job Build Triggers Config](screenshots/jenkins/cypress_build_triggers.png) — Webhook and polling configuration for the Cypress pipeline.
 
 ### 📊 JMeter API Performance Logs
-- [JMeter HTML Dashboard Screenshot](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jmeter/jmeter_dashboard.png) — High-concurrency statistics summary report showing 100% PASS rate.
+- [JMeter HTML Dashboard Summary](screenshots/jmeter/jmeter_dashboard.png) — High-concurrency statistics summary report showing 100% PASS rate.
+- [JMeter Response Times Chart](screenshots/jmeter/response_times.png) — Performance distribution chart showing response times under load.
+- [JMeter Hits Per Second (Throughput)](screenshots/jmeter/throughput.png) — Throughput chart representing active transactions per second.
+- [JMeter Latency Over Time](screenshots/jmeter/overtime.png) — Over Time response latency graph indicating stability.
 
 ### ☸️ Jenkins Pipeline & TestNG Reports
-- [Jenkins Server Dashboard Overview](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/jenkins_dashboard.png) — Displays active pipeline job statuses.
-- [Selenium Job Dashboard and Trend Graph](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/selenium_job_dashboard.png) — Overview of builds showing the TestNG results chart widget.
-- [TestNG Results Trend Graph](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/testng_trend_graph.png) — Aggregated pass/fail statistics across successful pipeline runs.
-- [TestNG Detailed Success Rates](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/testng_detailed_results.png) — Execution list breakdown for individual test cases.
-- [Selenium Build Triggers Config](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/selenium_build_triggers.png) — Verified webhook and polling triggers settings page.
-- [Cypress Build Triggers Config](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/cypress_build_triggers.png) — Webhook and polling configuration for the Cypress pipeline.
+- [Jenkins Server Dashboard Overview](screenshots/jenkins/jenkins_dashboard.png) — Displays active pipeline job statuses.
+- [Selenium Job Dashboard and Trend Graph](screenshots/jenkins/selenium_job_dashboard.png) — Overview of builds showing the TestNG results chart widget.
+- [TestNG Results Trend Graph](screenshots/jenkins/testng_trend_graph.png) — Aggregated pass/fail statistics across successful pipeline runs.
+- [TestNG Detailed Success Rates](screenshots/jenkins/testng_detailed_results.png) — Execution list breakdown for individual test cases.
+- [Selenium Build Triggers Config](screenshots/jenkins/selenium_build_triggers.png) — Verified webhook and polling triggers settings page.
