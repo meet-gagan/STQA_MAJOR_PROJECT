@@ -23,10 +23,12 @@ The project implements and tests critical application flows across all testing f
 - **GET /api/quizzes/teacher/mine** — Fetches teacher-specific quiz catalogs.
 
 ### 3. JMeter Performance & Load Tests (API Threads)
-- **POST /api/results** — Submits finished quiz score configurations under load.
-- **GET /api/results/my** — High-concurrency retrieval of a student's scoring history.
-- **POST /api/auth/register** & **POST /api/auth/login** — Load testing authentication endpoints.
-- **GET /api/auth/me** & **PUT /api/auth/profile** — Verifies profile management latency under concurrent loads.
+1. **POST /api/results** — Submits finished quiz score configurations under load.
+2. **GET /api/results/my** — High-concurrency retrieval of a student's scoring history.
+3. **POST /api/auth/register** — Performs load testing of new user registration.
+4. **POST /api/auth/login** — Performs load testing of user authentication.
+5. **GET /api/auth/me** — Verifies current profile verification latency under concurrent load.
+6. **PUT /api/auth/profile** — Verifies profile update latency under concurrent load.
 
 ---
 
@@ -67,7 +69,9 @@ quizapp-stqa/
 │   ├── jmeter_test.jmx     # Apache JMeter Load Test Configuration (128 samples)
 │   └── jmeter_results.jtl  # JMeter Test Run Logs
 └── screenshots/            # Committed Test Dashboard Evidence & Runs
-    └── jenkins/            # Jenkins Pipeline runs and TestNG Trend Dashboards
+    ├── cypress/            # Cypress Spec Run Screenshots
+    ├── jenkins/            # Jenkins Pipeline runs and TestNG Trend Dashboards
+    └── jmeter/             # JMeter Load Test Reports
 ```
 
 ---
@@ -183,6 +187,13 @@ The project implements automated builds in **Jenkins** running on port **8082**:
 ## 📸 Test Results & Screenshots Location
 
 Evidence of successful local and Jenkins test executions are tracked and committed under the [screenshots/](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots) directory:
+
+### 🌲 Cypress E2E Spec Runs
+- [Cypress Spec Run Screenshot](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/cypress/cypress_run.png) — Captures local headed spec runner results (25 passing E2E tests).
+- [Cypress Job Build Triggers Config](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/cypress_build_triggers.png) — Webhook and polling configuration for the Cypress pipeline.
+
+### 📊 JMeter API Performance Logs
+- [JMeter HTML Dashboard Screenshot](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jmeter/jmeter_dashboard.png) — High-concurrency statistics summary report showing 100% PASS rate.
 
 ### ☸️ Jenkins Pipeline & TestNG Reports
 - [Jenkins Server Dashboard Overview](file:///Users/gagannagu/Desktop/quizapp%206%20test/screenshots/jenkins/jenkins_dashboard.png) — Displays active pipeline job statuses.
