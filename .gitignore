@@ -26,7 +26,6 @@ jmeter_report/
 *.jtl
 
 # Local Screen shots
-screenshots/
 Test/screenshots/
 selenium-java/screenshots/
 
