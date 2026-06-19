@@ -26,9 +26,7 @@ pipeline {
     post {
         always {
             // Publish TestNG results to populate the TestNG Reports Analyzer dashboard in Jenkins
-            testNG targetPattern: '**/target/surefire-reports/testng-results.xml',
-                   unstableSkips: true,
-                   unstableFails: true
+            testNG()
         }
     }
 }
