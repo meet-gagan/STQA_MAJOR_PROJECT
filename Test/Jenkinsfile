@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    environment {
+        PATH = "/Users/gagannagu/.nvm/versions/node/v22.13.1/bin:/opt/homebrew/bin:${env.PATH}"
+    }
 
     stages {
         stage('Checkout') {
