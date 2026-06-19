@@ -5,6 +5,11 @@ pipeline {
         PATH = "/Users/gagannagu/.nvm/versions/node/v22.13.1/bin:/opt/homebrew/bin:${env.PATH}"
     }
 
+    triggers {
+        githubPush()
+        pollSCM('*/2 * * * *')
+    }
+
     stages {
         stage('Checkout') {
             steps {

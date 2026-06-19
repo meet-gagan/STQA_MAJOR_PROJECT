@@ -6,6 +6,11 @@ pipeline {
         PATH = "${JAVA_HOME}/bin:/opt/homebrew/bin:${env.PATH}"
     }
 
+    triggers {
+        githubPush()
+        pollSCM('*/2 * * * *')
+    }
+
     stages {
         stage('Checkout') {
             steps {
